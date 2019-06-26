@@ -2,7 +2,7 @@
 
 namespace secrets.Migrations
 {
-    public partial class Third : Migration
+    public partial class @new : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

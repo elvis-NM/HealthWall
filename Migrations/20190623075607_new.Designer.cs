@@ -9,8 +9,8 @@ using secrets.Models;
 namespace secrets.Migrations
 {
     [DbContext(typeof(secretsContext))]
-    [Migration("20190618052148_Third")]
-    partial class Third
+    [Migration("20190623075607_new")]
+    partial class @new
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -43,7 +43,8 @@ namespace secrets.Migrations
                         .ValueGeneratedOnAdd();
 
                     b.Property<string>("Content")
-                        .IsRequired();
+                        .IsRequired()
+                        .HasMaxLength(200);
 
                     b.Property<DateTime>("CreatedAt");
 

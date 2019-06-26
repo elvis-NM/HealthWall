@@ -14,8 +14,9 @@ namespace secrets.Models
 
         public int UserId { get; set; }
         [Required]
-        [MinLength(10, ErrorMessage = "Secret must be 10 or more characters")]
-        [Display(Name = "New Secret")]
+        [MinLength(10, ErrorMessage = "Suggestion must be 10 or more characters")]
+        [MaxLength(200, ErrorMessage = "Suggestion must be less than 200 characters")]
+        [Display(Name = "New Suggestion")]
         public string Content { get; set; }
         public DateTime CreatedAt { get; set; } = DateTime.Now;
 
