@@ -1,37 +1,201 @@
-﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
-for details on configuring this project to bundle and minify static web assets. */
-body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+﻿body {
+    background-color:dodgerblue;
+    color: whitesmoke;
+    font-family: monospace;
+    width: auto;
+    height: auto;
+   
+
 }
 
-/* Wrapping element */
-/* Set some basic padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+.container {
+    background-color:deeppink;
+    width: auto;
+    height: auto;
+    padding: 80px 0px 180px 10px;
+    border: 0px solid whitesmoke;
+    border-radius: 0px;
+    margin: 0px 160px 0px 160px;
+    font-size: 33px;
 }
 
-/* Carousel */
-.carousel-caption p {
-    font-size: 20px;
-    line-height: 1.4;
+
+div.jumbotron {
+    background-color: black;
+    width: auto;
+    height: auto;
+    margin: auto;
+    padding: 30px 0px 30px 0px;
+    border-radius: 0px;
+    font-family: monospace;
+    font-size: 33px;
+
 }
 
-/* Make .svg files in the carousel display properly in older browsers */
-.carousel-inner .item img[src$=".svg"] {
-    width: 100%;
+h2{
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    height: 72px;
+    font-size: 60px;
+    font-family:monospace;
+    
 }
 
-/* QR code generator */
-#qrCode {
-    margin: 15px;
+#header,
+Ul,
+li,
+h1 {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0px 0px 0px 10px;
+    color: white;
+    margin-left: 30px;
+    font-size: 28px;
+
 }
 
-/* Hide/rearrange for smaller screens */
-@media screen and (max-width: 767px) {
-    /* Hide captions */
-    .carousel-caption {
-        display: none;
+Ul#header{
+    margin: 20px 0px 0px 0px;
+    height:42px;
+    width:960px;
+}
+
+#footer,
+a {
+    color: rgb(14, 81, 126);
+    text-align: center;
+    padding: 5px 30px 5px 0px;
+    font-size: 18px;
+}
+
+
+
+
+#footer {
+    background-color: rgb(210, 230, 248);
+    margin-top: 0px;
+    border-radius: 0px;
+}
+
+.spans {
+    color: rgb(23, 95, 179);
+}
+
+#icon01{
+height: 68px;
+width: 68px;
+}
+
+
+@-webkit-keyframes bounce {
+
+    from,
+    20%,
+    53%,
+    80%,
+    to {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
     }
+
+    40%,
+    43% {
+        -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+        animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+        -webkit-transform: translate3d(0, -30px, 0);
+        transform: translate3d(0, -30px, 0);
+    }
+
+    70% {
+        -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+        animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+        -webkit-transform: translate3d(0, -15px, 0);
+        transform: translate3d(0, -15px, 0);
+    }
+
+    90% {
+        -webkit-transform: translate3d(0, -4px, 0);
+        transform: translate3d(0, -4px, 0);
+    }
+}
+
+@keyframes bounce {
+
+    from,
+    20%,
+    53%,
+    80%,
+    to {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    40%,
+    43% {
+        -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+        animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+        -webkit-transform: translate3d(0, -30px, 0);
+        transform: translate3d(0, -30px, 0);
+    }
+
+    70% {
+        -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+        animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+        -webkit-transform: translate3d(0, -15px, 0);
+        transform: translate3d(0, -15px, 0);
+    }
+
+    90% {
+        -webkit-transform: translate3d(0, -4px, 0);
+        transform: translate3d(0, -4px, 0);
+    }
+}
+
+.bounce {
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+}
+
+
+#icon01 {
+    /* This section calls the slideInFromrightt animation we defined above */
+    animation: 1s ease-out .3s 20 bounce;
+}
+
+
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+}
+
+
+h3 {
+    /* This section calls the slideInFromrightt animation we defined above */
+    animation: 3s ease-out 0s 1 fadeInDown;
+}
+
+li {
+    /* This section calls the slideInFromrightt animation we defined above */
+    animation: 3s ease-out 0s 1 fadeInDown;
 }

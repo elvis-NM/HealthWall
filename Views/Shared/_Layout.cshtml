@@ -15,11 +15,61 @@
               asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
         <link rel="stylesheet" href="~/css/site.css" />
     </environment>
+
 </head>
 <body>
-    <div class="container body-content">
-        @RenderBody()
+ <div class="jumbotron">
+        <h2>Elvis's <span class="spans">Portfolio</span></h2>
+
+        <Ul id="header">
+            <a href="">
+                <li> <span class="spans">
+                        Home
+                    </span></li>
+            </a>
+            <a href="">
+                <li> <span class="spans">
+                        Aboutme
+                    </span></li>
+            </a>
+
+            <a href="">
+                <li> Python/Django </li>
+            </a>
+            <a href="">
+                <li>C#/ASP.NETcore </li>
+            </a>
+        </Ul>
+        <a href="">
+            <img id="icon01" src= "~/images/csharplogo.png" alt="csharplogo">         
+            </a>
     </div>
+    
+    <div class="container">
+
+   
+        @RenderBody()
+    
+    </div>
+        <footer class="fixed-bottom">
+
+            <div id="footer">
+               <div id="footer">
+                <a href=""> Home </a>
+                <a href=""> About </a>
+                <a href=""> Python/Django</a>
+                <a href=""> C#/ASP.NETcore<a>
+                        <a href=""> Contact</a>
+
+
+            </div>
+
+
+        </footer>
+
+
+  
+    
 
     <environment include="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>
