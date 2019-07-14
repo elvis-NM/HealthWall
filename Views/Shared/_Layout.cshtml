@@ -3,11 +3,12 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>secrets</title>
+    <title>WeddingPlanner</title>
 
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
-        <link rel="stylesheet" href="~/css/site.css" />
+     <link rel="stylesheet" href="~/css/site.css" />
+
     </environment>
     <environment exclude="Development">
         <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -15,32 +16,32 @@
               asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
         <link rel="stylesheet" href="~/css/site.css" />
     </environment>
-
+ 
 </head>
 <body>
  <div class="jumbotron">
         <h2>Elvis's <span class="spans">Portfolio</span></h2>
 
         <Ul id="header">
-            <a href="">
+            <a asp-controller="Secret" asp-action="Portfolioo"> 
                 <li> <span class="spans">
                         Home
                     </span></li>
             </a>
-            <a href="">
+            <a asp-controller="Secret" asp-action="About"> 
                 <li> <span class="spans">
                         Aboutme
                     </span></li>
             </a>
 
-            <a href="">
+             <a asp-controller="Secret" asp-action="Python"> 
                 <li> Python/Django </li>
             </a>
-            <a href="">
+<a asp-controller="Secret" asp-action="Csharp"> 
                 <li>C#/ASP.NETcore </li>
             </a>
         </Ul>
-        <a href="">
+        <a asp-controller="Secret" asp-action="Csharp"> 
             <img id="icon01" src= "~/images/csharplogo.png" alt="csharplogo">         
             </a>
     </div>
@@ -55,20 +56,16 @@
 
             <div id="footer">
                <div id="footer">
-                <a href=""> Home </a>
-                <a href=""> About </a>
-                <a href=""> Python/Django</a>
-                <a href=""> C#/ASP.NETcore<a>
-                        <a href=""> Contact</a>
-
-
+                <a asp-controller="Secret" asp-action="Portfolioo"> Home </a>
+                 <a asp-controller="Secret" asp-action="About"> About </a>
+                <a asp-controller="Secret" asp-action="Python"> Python/Django </a>
+                <a asp-controller="Secret" asp-action="Csharp"> C#/ASP.NETcore </a>
+                <a asp-controller="Secret" asp-action="Contact"> Contact </a>
             </div>
 
 
         </footer>
-
-
-  
+        
     
 
     <environment include="Development">

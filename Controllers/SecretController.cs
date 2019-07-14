@@ -129,5 +129,37 @@ namespace secrets.Controllers
         }
 
 
+        [HttpGet("portfolioo")]
+        public IActionResult Portfolioo()
+        {
+            return Redirect("http://18.220.137.34/");
+        }
+
+        [HttpGet("about")]
+        public IActionResult About()
+        {
+            return Redirect("http://18.220.137.34/about/");
+        }
+
+        [HttpGet("python")]
+        public IActionResult Python()
+        {
+            return Redirect("http://18.220.137.34/python/");
+        }
+
+        [HttpGet("csharp")]
+        public IActionResult Csharp()
+        {
+            return Redirect("http://18.220.137.34/csharp/");
+        }
+
+        [HttpGet("contact")]
+        public IActionResult Contact()
+        {
+            return Redirect("http://18.220.137.34/about/Pdf");
+        }
+
+
+
     }
 }

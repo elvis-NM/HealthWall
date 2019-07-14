@@ -58,7 +58,7 @@ using secrets.Models;
             WriteLiteral("\r\n<div class=\"container\">\r\n<h1>We are what we do daily !</h1><br>\r\n<h1>Journalizing our daily tasks is  good practice !!</h1> <br>\r\n<h1>Signup or Login and Suggest a good daily routine  anyone could  adopt !!!</h1> <br><hr>\r\n\r\n");
             EndContext();
             BeginContext(242, 28, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "6be83aa16f904cb4ab93e1fe662bca85", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "0ec8264931eb457f99fdf0cf7c6b8d30", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper>();
@@ -77,7 +77,7 @@ using secrets.Models;
             WriteLiteral(" <br><br><hr>\r\n");
             EndContext();
             BeginContext(285, 30, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "62654f6732aa44ac9372f95ed2bd2cd5", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "43ce80c6af984ba4b9477ca7ee7fa50f", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper>();
